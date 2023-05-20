@@ -1,5 +1,8 @@
 :local :root{
-/* 1unit =0.25rem =4px*/
+/* -- 1unit =0.25rem =4px
+local 我定義的東西，只會在這個mudule有被使用的時候才會可以用。(才能被用到golbal)
+
+*/
  --1: 0.25rem;
  --2: 0.5rem;
  --3: 0.75rem;
