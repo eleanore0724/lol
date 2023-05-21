@@ -1,4 +1,4 @@
-:local :root{
+:local :root {
 /* -- 1unit =0.25rem =4px
 local 我定義的東西，只會在這個mudule有被使用的時候才會可以用。(才能被用到golbal)
 
@@ -8,28 +8,77 @@ local 我定義的東西，只會在這個mudule有被使用的時候才會可�
  --3: 0.75rem;
  --4: 1rem;
  --5: 1.25rem;
- --6: .5rem;
+ --6: 1.5rem;
+ --7: 1.75rem;
+ --8: 2rem;
+ --9: 2.25rem;
+ --10: 2.5rem;
+ --20: 5rem;
+ --full: 100%;
+
+ /* theme */
+ --white: white;
+ --primary:#512051;
+ --primary-light: #ee69a4;
+ --seconedary:#927b91;
+ --secondary-light: #f7f2f7;
 }
 
 .main {
-    padding-inline:var(6) ;
+    padding-inline:var(--6);
+}
+
+.header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--4);
 }
 
 .title {
+    padding-inline:var(--2);
+    color: var(--primary);
 }
 
 .description {
+    line-height: var(--6);
+    color:var(--seconedary);
 }
 
 .rate {
+background-color: var(--secondary-light);
+border-radius: var(--2);
+padding: var(--4);
+display: flex;
+flex-direction: column;
+align-items: center;
+gap:var(--2)
+}
+
+.rate ul {
+    display: flex;
+    gap: var(--2);
+}
+
+.rate strong {
+    font-size:var(--3);
+    color: var(--primary);
 }
 
 .comment {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: var(--8);
+    font-size: var(--3);
+    border-radius: var(--2);
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--6);
 }
 
 
-.header {
-}
+
 
 .list {
 }

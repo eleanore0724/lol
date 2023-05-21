@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "./app.module.css";
+import { ReactComponent as Iconstar} from'./images/icon-star.svg'
+import PictureColton from './images/image-colton.jpg'
 /*
 - header
   -title
@@ -9,56 +11,59 @@ import styles from "./app.module.css";
 */
 function Title(){
 
-  return <h className={styles.title}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cupiditate,
-     quo quisquam atque dolore officia ipsa veritatis tenetur voluptate consectetur, cul
-     a ea quia aperiam quos! Ratione maiores quia sint facere.</h>;
+  return <h className={styles.title}>10,000+ of our users love our products.</h>;
 }
 
 function Description(){
-  return <p className={styles.description}>This study uses the financial statements of Taiwan electronic game company "Game Orange" as an 
-    example to investigate the impact of the performance of the six major components of financial statements 
-    on the company's business performance.</p>
+  return <p className={styles.description}> We only provide great products combined with excellent customer service.
+  See what our satisfied customers are saying about our services.</p>
 }
 
 function Rate(){
   return (
     <div className={styles.rate}>
-      <ul>
-        <li>Star</li>
-       <li>Star</li>
-       <li>Star</li>
-       <li>Star</li>
-      <li>Star</li>
-      </ul>
+      <dl>
+         <dt><Iconstar /></dt>
+          <dt><Iconstar /></dt>
+         <dt><Iconstar /></dt>
+         <dt><Iconstar /></dt>
+         <dt><Iconstar /></dt>
+      </dl>
      <strong>Rates Star in Revuiws</strong>
    </div>
   );
 }
 
-function Comment(){
+function Comment() {
+  
 /*
 -header
   -avatar
   -username
   -verified
 -comment
+
+console.log(PictureColton); 他是base64的URL，下去放去image tag
 */
   return (
-    <div>
-      <header className={styles.comment}>
+    <div className={styles.comment}>
+      <header>
+      <img src={PictureColton} alt="someone's avatars" />
+      <div>Picture</div>
+      
         <div>
          <strong>Coltion Smith</strong>
         <span>Verified Buyer</span>
         </div>
     </header>
     <p>
-    his study uses the financial statements of Taiwan electronic game company "Game Orange" as an 
-    example to investigate the impact of the performance of the six major components of financial statements 
-    on the company's business performance.
+    “ We needed the same printed design as the one we had ordered a week
+        prior. Not only did they find the original order, but we also received
+        it in time. Excellent! ”    
     </p>
 
     </div>
-  )
+  );
 }
 
 function App() {
