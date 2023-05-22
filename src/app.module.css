@@ -1,8 +1,7 @@
-:local :root {
 /* -- 1unit =0.25rem =4px
 local 我定義的東西，只會在這個mudule有被使用的時候才會可以用。(才能被用到golbal)
-
 */
+:local :root {
  --1: 0.25rem;
  --2: 0.5rem;
  --3: 0.75rem;
@@ -16,7 +15,7 @@ local 我定義的東西，只會在這個mudule有被使用的時候才會可�
  --20: 5rem;
  --full: 100%;
 
- /* theme */
+  /* theme */
  --white: white;
  --primary:#512051;
  --primary-light: #ee69a4;
@@ -24,8 +23,32 @@ local 我定義的東西，只會在這個mudule有被使用的時候才會可�
  --secondary-light: #f7f2f7;
 }
 
+/* decoration */
+/*
+.main::before{
+    content: "";
+    background-image: url('./images/bg-pattern-top-mobile.svg');
+    background-repeat: no-repeat;
+
+    width: 374px;
+    height: 232px;
+}
+.main::after{
+    
+    content: "";
+    background-image: url('./images/bg-pattern-bottom-mobile.svg');
+    background-repeat: no-repeat;
+    width: 375px;
+    height: 503px;
+}
+*/
+
 .main {
-    padding-inline:var(--6);
+    padding-inline: var(--6);
+    padding-block: var(--20);
+    display: flex;
+    flex-direction: column;
+    gap:var(--10);
 }
 
 .header {
@@ -77,8 +100,16 @@ gap:var(--2)
     gap: var(--6);
 }
 
+.comment header {
+    display: fiex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-
-
+.comment.avatar {
+    width: var(--10);
+    border-radius: (--full);
+    overflow: hidden;
+}
 .list {
 }

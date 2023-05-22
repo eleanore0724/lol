@@ -34,8 +34,6 @@ function Rate(){
   );
 }
 
-function Comment() {
-  
 /*
 -header
   -avatar
@@ -45,6 +43,7 @@ function Comment() {
 
 console.log(PictureColton); 他是base64的URL，下去放去image tag
 */
+function Comment() {
   return (
     <div className={styles.comment}>
       <header>
@@ -72,7 +71,7 @@ function App() {
      <header className={styles.hrader}>
       <Title />
       <Description />
-      <ul className={styles.list}>
+      <ul>
         <li>
           <Rate />
         </li>
@@ -84,7 +83,7 @@ function App() {
         </li>
       </ul> 
 
-      <ul className={styles.list}>
+      <ul>
         <li>
           <Comment />
         </li>
