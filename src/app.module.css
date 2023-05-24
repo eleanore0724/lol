@@ -1,115 +1,127 @@
 /* -- 1unit =0.25rem =4px
 local 我定義的東西，只會在這個mudule有被使用的時候才會可以用。(才能被用到golbal)
+
 */
 :local :root {
- --1: 0.25rem;
- --2: 0.5rem;
- --3: 0.75rem;
- --4: 1rem;
- --5: 1.25rem;
- --6: 1.5rem;
- --7: 1.75rem;
- --8: 2rem;
- --9: 2.25rem;
- --10: 2.5rem;
- --20: 5rem;
- --full: 100%;
+    --1: 0.25rem;
+    --2: 0.5rem;
+    --3: 0.75rem;
+    --4: 1rem;
+    --5: 1.25rem;
+    --6: 1.5rem;
+    --7: 1.75rem;
+    --8: 2rem;
+    --9: 2.25rem;
+    --10: 2.5rem;
+    --20: 5rem;
+    --full: 100%;
+   
+     /* theme */
+    --white: white;
+    --primary:#512051;
+    --primary-light: #ee69a4;
+    --seconedary:#927b91;
+    --secondary-light: #f7f2f7;
+   }
+   
+   /* decoration */
+   /*
+   .main::before{
+       content: "";
+       background-image: url('./images/bg-pattern-top-mobile.svg');
+       background-repeat: no-repeat;
+   
+       width: 374px;
+       height: 232px;
+   }
+   .main::after{
+       
+       content: "";
+       background-image: url('./images/bg-pattern-bottom-mobile.svg');
+       background-repeat: no-repeat;
+       width: 375px;
+       height: 503px;
+   }
+   */
+   
+   .main {
+       padding-inline: var(--6);
+       padding-block: var(--20);
+       display: flex;
+       flex-direction: column;
+       gap:var(--10);
+   }
+   
+   .header {
+       text-align: center;
+       display: flex;
+       flex-direction: column;
+       gap: var(--4);
+   }
+   
+   .title {
+       padding-inline:var(--2);
+       color: var(--primary);
+       font-size: 30px;
+       font-weight: bold;
+       text-align: center;
+   }
+   
+   .description {
+       line-height: var(--6);
+       color:var(--seconedary);
+       text-align: center;
+   }
+   
+   .rate {
+   background-color: var(--secondary-light);
+   border-radius: var(--2);
+   padding: var(--4);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap:var(--2)
+   }
+   
+   .rate ul {
+       display: flex;
+       gap: var(--2);
+   }
+   
+   .rate strong {
+       font-size:var(--3);
+       color: var(--primary);
+   }
+   
+   .comment {
+       background-color: var(--primary);
+       color: var(--white);
+       padding: var(--8);
+       font-size: var(--3);
+       border-radius: var(--2);
+   
+       display: flex;
+       flex-direction: column;
+       gap: var(--6);
+   }
+   
+   .comment header {
+       display: flex;
+       gap: var(--6);
+   }
 
-  /* theme */
- --white: white;
- --primary:#512051;
- --primary-light: #ee69a4;
- --seconedary:#927b91;
- --secondary-light: #f7f2f7;
-}
-
-/* decoration */
-/*
-.main::before{
-    content: "";
-    background-image: url('./images/bg-pattern-top-mobile.svg');
-    background-repeat: no-repeat;
-
-    width: 374px;
-    height: 232px;
-}
-.main::after{
-    
-    content: "";
-    background-image: url('./images/bg-pattern-bottom-mobile.svg');
-    background-repeat: no-repeat;
-    width: 375px;
-    height: 503px;
-}
-*/
-
-.main {
-    padding-inline: var(--6);
-    padding-block: var(--20);
+   .comment .user{
     display: flex;
-    flex-direction: column;
-    gap:var(--10);
-}
-
-.header {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: var(--4);
-}
-
-.title {
-    padding-inline:var(--2);
-    color: var(--primary);
-}
-
-.description {
-    line-height: var(--6);
-    color:var(--seconedary);
-}
-
-.rate {
-background-color: var(--secondary-light);
-border-radius: var(--2);
-padding: var(--4);
-display: flex;
-flex-direction: column;
-align-items: center;
-gap:var(--2)
-}
-
-.rate ul {
-    display: flex;
-    gap: var(--2);
-}
-
-.rate strong {
-    font-size:var(--3);
-    color: var(--primary);
-}
-
-.comment {
-    background-color: var(--primary);
-    color: var(--white);
-    padding: var(--8);
-    font-size: var(--3);
-    border-radius: var(--2);
-
-    display: flex;
-    flex-direction: column;
-    gap: var(--6);
-}
-
-.comment header {
-    display: fiex;
     flex-direction: column;
     justify-content: center;
-}
+   }
 
-.comment.avatar {
-    width: var(--10);
-    border-radius: (--full);
-    overflow: hidden;
-}
-.list {
-}
+   .comment.avatar {
+       width: var(--10);
+       border-radius: (--full);
+       aspect-ratio: 1/1;
+       overflow: hidden;
+   }
+   .list {
+   }
+   

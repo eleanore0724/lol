@@ -22,13 +22,13 @@ function Description(){
 function Rate(){
   return (
     <div className={styles.rate}>
-      <dl>
-         <dt><Iconstar /></dt>
-          <dt><Iconstar /></dt>
-         <dt><Iconstar /></dt>
-         <dt><Iconstar /></dt>
-         <dt><Iconstar /></dt>
-      </dl>
+      <ul>
+         <li><Iconstar /></li>
+         <li><Iconstar /></li>
+         <li><Iconstar /></li>
+         <li><Iconstar /></li>
+         <li><Iconstar /></li>
+      </ul>
      <strong>Rates Star in Revuiws</strong>
    </div>
   );
@@ -47,10 +47,10 @@ function Comment() {
   return (
     <div className={styles.comment}>
       <header>
-      <img src={PictureColton} alt="someone's avatars" />
-      <div>Picture</div>
+      <img className={styles.avatar} 
+      src={PictureColton} alt="someone's avatars" />
       
-        <div>
+        <div className={styles.user}>
          <strong>Coltion Smith</strong>
         <span>Verified Buyer</span>
         </div>
