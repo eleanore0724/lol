@@ -47,8 +47,11 @@ function Comment() {
   return (
     <div className={styles.comment}>
       <header>
-      <img className={styles.avatar} 
-      src={PictureColton} alt="someone's avatars" />
+      <img 
+        className={styles.avatar} 
+        src={PictureColton} 
+        alt="someone's avatars" 
+      />
       
         <div className={styles.user}>
          <strong>Coltion Smith</strong>
@@ -71,7 +74,7 @@ function App() {
      <header className={styles.hrader}>
       <Title />
       <Description />
-      <ul>
+      <ul className={styles.list}>
         <li>
           <Rate />
         </li>
@@ -83,7 +86,7 @@ function App() {
         </li>
       </ul> 
 
-      <ul>
+      <ul className={styles.list}>
         <li>
           <Comment />
         </li>

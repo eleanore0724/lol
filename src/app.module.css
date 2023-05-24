@@ -52,6 +52,7 @@ local 我定義的東西，只會在這個mudule有被使用的時候才會可�
        gap:var(--10);
    }
    
+   
    .header {
        text-align: center;
        display: flex;
@@ -116,12 +117,23 @@ local 我定義的東西，只會在這個mudule有被使用的時候才會可�
     justify-content: center;
    }
 
-   .comment.avatar {
+   .comment .avatar {
        width: var(--10);
        border-radius: (--full);
        aspect-ratio: 1/1;
        overflow: hidden;
    }
-   .list {
+
+   .comment .user span {
+    color: var(--primary-light);
    }
-   
+
+   .comment p{
+    line-height: var(--6);
+   }
+
+   .list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--4);
+  }
