@@ -71,7 +71,7 @@ function Comment() {
 function App() {
   return (
     <main className={styles.main}>
-     <header className={styles.hrader}>
+     <header className={styles.header}>
       <Title />
       <Description />
       <ul className={styles.list}>

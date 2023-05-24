@@ -119,7 +119,7 @@ local 我定義的東西，只會在這個mudule有被使用的時候才會可�
 
    .comment .avatar {
        width: var(--10);
-       border-radius: (--full);
+       border-radius: var(--full);
        aspect-ratio: 1/1;
        overflow: hidden;
    }
