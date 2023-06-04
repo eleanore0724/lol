@@ -6,7 +6,7 @@ import { Title } from "./title";
 import { Description } from "./description";
 import { Rate } from "./rate"
 import { Comment } from "./comment"
-
+import { Auth } from "./auth"
 /*
 - header
   -title
@@ -54,6 +54,7 @@ function App() {
             <Comment />
           </li>
         </ul>
+        <Auth className="Authh"/>
       </header>
     </main>
   );
